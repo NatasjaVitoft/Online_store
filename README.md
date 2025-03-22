@@ -19,7 +19,7 @@ Information about customers is written several times, making is necessary to sto
 
 I could be useful for avoiding joins on other tables, but we think this gain is very minimal in comparison to the cost of introducing redundacy. The original Customers table, has become completely useless, and future updates requires updates of both the customers table, and all corresponding rows in orders.
 
-### Exercise 3: Using Partitioning for Sales Data
+## Exercise 3: Using Partitioning for Sales Data
 
 The pros of using partitioning is if you have a very large table containing many rows and a lot of data. By breaking the table into smaller parts it can improve the speed of the queries and also make it more managable for those writing the queries and accessing the data. 
 
