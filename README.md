@@ -39,7 +39,7 @@ It automatically decides which partition to examine, meaning there is no runtime
 
 # Query Optimization Exercises
 
-### Notes for exercise 1 
+## Notes for exercise 1 
 
 The table shows the performance differences between the nested subquery and the join query. In this case, the subquery is actually performing better than the join query, but in scenarios involving larger datasets, a JOIN query would typically be more efficient. This is because, with a JOIN, we can reduce redundancy. With a subquery, the database may need to scan all the rows multiple times, and as the table grows in size, this can result in longer execution times compared to using a JOIN. But in this case there is only a few rows in the orders table which may be why the subquery performs better here. The JOIN query uses the customers_pkey index, which helps it perform better by scanning fewer rows compared to the subquery. On the other hand, the subquery doesn't use the index, so it should be slower if we had more data. 
 
@@ -57,7 +57,7 @@ The table shows the performance differences between the nested subquery and the 
 | **Planning Time**          | **0.326 ms**                                                       | **0.621 ms**                                                      |
 
 
-### Notes for exercise 2
+## Notes for exercise 2
 
 We tried to run the performance before and after adding an index for this query:
 
